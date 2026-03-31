@@ -27,7 +27,82 @@ cd sinkhole-mapping
 
 2. Ensure ArcPy is available in your Python environment. If using ArcGIS Desktop Python, no additional installation is needed.
 
-## 📂 Project Structure
+## � Git Basics
+
+Here are the essential git commands you'll use when working with this project:
+
+### Cloning the Repository
+```bash
+git clone <repository-url>
+cd sinkhole-mapping
+```
+Creates a local copy of the remote repository on your computer.
+
+### Checking Status
+```bash
+git status
+```
+Shows which files have been modified, added, or deleted since the last commit.
+
+### Staging Changes
+```bash
+git add <filename>          # Stage a specific file
+git add .                   # Stage all changes
+```
+Prepares changes to be committed. Staging lets you choose which changes to include in your next commit.
+
+### Committing Changes
+```bash
+git commit -m "Your descriptive message"
+```
+Saves your staged changes to the local repository with a message describing what you changed.
+
+### Pushing Changes
+```bash
+git push 
+```
+Uploads your committed changes to the remote repository (e.g., GitHub).
+
+### Creating a Feature Branch
+```bash
+git checkout -b feature/your-feature-name
+```
+Creates a new branch for your work. Always create a new branch for features or bug fixes instead of working on `main`.
+
+### Viewing Commit History
+```bash
+git log                     # Show all commits
+git log --oneline           # Show commits in a compact format
+```
+Displays the history of commits in the repository.
+
+### Pulling Latest Changes
+```bash
+git pull 
+```
+Downloads and merges the latest changes from the remote repository into your local branch.
+
+### Basic Workflow Example
+```bash
+# 1. Create and switch to a new branch
+git checkout -b feature/add-new-measurement
+
+# 2. Make changes to files (edit, create, delete)
+
+# 3. Check what changed
+git status
+
+# 4. Stage your changes
+git add .
+
+# 5. Commit with a descriptive message
+git commit -m "Add new sinkhole depth measurement feature"
+
+# 6. Push to remote repository
+git push origin feature/add-new-measurement
+```
+
+## �📂 Project Structure
 
 ```
 sinkhole-mapping/
